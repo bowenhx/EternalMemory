@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyLifeMainViewController">
+            <connections>
+                <outlet property="MyDiaryBtn" destination="330" id="AX9-Yi-nuk"/>
+                <outlet property="MyPictureBtn" destination="332" id="GQI-SD-Xbv"/>
+                <outlet property="MyVideoBtn" destination="331" id="36g-wo-gQf"/>
+                <outlet property="_scrollView" destination="USa-OF-0tX" id="rho-wE-BFF"/>
+                <outlet property="choseStyleBtn" destination="328" id="c7w-pm-o9s"/>
+                <outlet property="moreOperaBtn" destination="325" id="tAg-MZ-RBT"/>
+                <outlet property="myGenBtn" destination="327" id="0XZ-rv-TVW"/>
+                <outlet property="myMusicBtn" destination="329" id="4ci-tF-vy3"/>
+                <outlet property="myProfileBtn" destination="334" id="JCb-vK-uD5"/>
+                <outlet property="rookieHelpBtn" destination="326" id="tVP-8Y-pDy"/>
+                <outlet property="titleLabel" destination="336" id="6TB-7c-5Om"/>
+                <outlet property="view" destination="324" id="471"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="324" userLabel="root view">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="335" userLabel="top view">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="top.png" id="337">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="永恒记忆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="336">
+                            <rect key="frame" x="126" y="14" width="68" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="USa-OF-0tX">
+                    <rect key="frame" x="0.0" y="120" width="320" height="516"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="334" userLabel="个人资料">
+                            <rect key="frame" x="13" y="18" width="91" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="tintColor" red="0.96470594409999999" green="0.46274513010000001" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                            <inset key="titleEdgeInsets" minX="-23" minY="50" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="17" minY="0.0" maxX="1" maxY="15"/>
+                            <state key="normal" title="我的资料" image="zl.png">
+                                <color key="titleColor" red="0.36862745879999997" green="0.40000003579999999" blue="0.43921571970000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="zl_p.png" backgroundImage="android_zbg_p.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onPersenalFileBtnClicked:" destination="-1" eventType="touchUpInside" id="588"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="331" userLabel="我的视频">
+                            <rect key="frame" x="219" y="20" width="91" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="tintColor" red="0.96470594409999999" green="0.46274513010000001" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                            <inset key="titleEdgeInsets" minX="-23" minY="50" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="24" minY="0.0" maxX="4" maxY="15"/>
+                            <state key="normal" title="电视" image="sp.png">
+                                <color key="titleColor" red="0.36862745879999997" green="0.40000003579999999" blue="0.43921571970000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="sp_p.png" backgroundImage="android_zbg_p.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onMyVideoBtnClicked" destination="-1" eventType="touchUpInside" id="596"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="326" userLabel="新手帮助">
+                            <rect key="frame" x="115" y="253" width="91" height="89"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="tintColor" red="0.96470594409999999" green="0.46274513010000001" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                            <inset key="titleEdgeInsets" minX="-23" minY="50" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="24" minY="0.0" maxX="6" maxY="15"/>
+                            <state key="normal" title="新手帮助" image="xs.png">
+                                <color key="titleColor" red="0.36862745879999997" green="0.40000003579999999" blue="0.43921571970000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="xs_p.png" backgroundImage="android_zbg_p.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onRookieHelpBtnClicked:" destination="-1" eventType="touchUpInside" id="592"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="332" userLabel="我的照片">
+                            <rect key="frame" x="115" y="18" width="91" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="tintColor" red="0.96470594409999999" green="0.46274513010000001" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                            <inset key="titleEdgeInsets" minX="-23" minY="50" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="24" minY="0.0" maxX="7" maxY="15"/>
+                            <state key="normal" title="相册" image="zp.png">
+                                <color key="titleColor" red="0.36862745879999997" green="0.40000003579999999" blue="0.43921571970000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="zp_p.png" backgroundImage="android_zbg_p.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onMyPictureBtnClicked" destination="-1" eventType="touchUpInside" id="589"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="330" userLabel="我的文献">
+                            <rect key="frame" x="13" y="135" width="91" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="tintColor" red="0.96470594409999999" green="0.46274513010000001" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                            <inset key="titleEdgeInsets" minX="-23" minY="50" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="24" minY="0.0" maxX="6" maxY="15"/>
+                            <state key="normal" title="书籍" image="wx.png">
+                                <color key="titleColor" red="0.36862745879999997" green="0.40000003579999999" blue="0.43921571970000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="wx_p.png" backgroundImage="android_zbg_p.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onMyDiaryBtnClicked" destination="-1" eventType="touchUpInside" id="590"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="329" userLabel="我的音乐">
+                            <rect key="frame" x="115" y="135" width="91" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="tintColor" red="0.96470594409999999" green="0.46274513010000001" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                            <inset key="titleEdgeInsets" minX="-23" minY="50" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="24" minY="0.0" maxX="7" maxY="15"/>
+                            <state key="normal" title="音乐" image="music.png">
+                                <color key="titleColor" red="0.36862745879999997" green="0.40000003579999999" blue="0.43921571970000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="music_p.png" backgroundImage="android_zbg_p.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onMyMusicBtnClicked:" destination="-1" eventType="touchUpInside" id="594"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="328" userLabel="风格选择">
+                            <rect key="frame" x="219" y="135" width="91" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="tintColor" red="0.96470594409999999" green="0.46274513010000001" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                            <inset key="titleEdgeInsets" minX="-23" minY="50" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="24" minY="0.0" maxX="3" maxY="15"/>
+                            <state key="normal" title="选房子" image="fg.png">
+                                <color key="titleColor" red="0.36862745879999997" green="0.40000003579999999" blue="0.43921571970000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="fg_p.png" backgroundImage="android_zbg_p.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onChooseStyleBtnClicked:" destination="-1" eventType="touchUpInside" id="595"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="327" userLabel="我的家谱">
+                            <rect key="frame" x="13" y="251" width="91" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="tintColor" red="0.96470594409999999" green="0.46274513010000001" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                            <inset key="titleEdgeInsets" minX="-23" minY="50" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="24" minY="0.0" maxX="7" maxY="15"/>
+                            <state key="normal" title="家谱" image="jp_m.png">
+                                <color key="titleColor" red="0.36862745879999997" green="0.40000003579999999" blue="0.43921571970000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="jp_p.png" backgroundImage="android_zbg_p.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onMyGenealogyBtnClicked:" destination="-1" eventType="touchUpInside" id="591"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="325" userLabel="更多功能">
+                            <rect key="frame" x="219" y="251" width="91" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="tintColor" red="0.96470594409999999" green="0.46274513010000001" blue="0.26274511220000002" alpha="1" colorSpace="deviceRGB"/>
+                            <inset key="titleEdgeInsets" minX="-23" minY="50" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="24" minY="0.0" maxX="5" maxY="15"/>
+                            <state key="normal" title="更多+退出" image="gd.png">
+                                <color key="titleColor" red="0.36862745879999997" green="0.40000003579999999" blue="0.43921571970000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="gd_p.png" backgroundImage="android_zbg_p.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onMoreBtnClicked" destination="-1" eventType="touchUpInside" id="593"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="333" userLabel="进入家园">
+                            <rect key="frame" x="10" y="371" width="300" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.12549020350000001" green="0.61176472900000001" blue="0.84313732389999996" alpha="1" colorSpace="deviceRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="114" minY="9" maxX="160" maxY="9"/>
+                            <state key="normal" title="返回全景" image="jy_m.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onMyHomeBtnClicked" destination="-1" eventType="touchUpInside" id="597"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.93333339689999995" green="0.94901967050000002" blue="0.96078437569999997" alpha="1" colorSpace="deviceRGB"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="android_zbg_p.png" width="26" height="23"/>
+        <image name="fg.png" width="36" height="36"/>
+        <image name="fg_p.png" width="36" height="36"/>
+        <image name="gd.png" width="36" height="36"/>
+        <image name="gd_p.png" width="36" height="36"/>
+        <image name="jp_m.png" width="36" height="36"/>
+        <image name="jp_p.png" width="36" height="36"/>
+        <image name="jy_m.png" width="52" height="52"/>
+        <image name="music.png" width="36" height="36"/>
+        <image name="music_p.png" width="36" height="36"/>
+        <image name="sp.png" width="36" height="36"/>
+        <image name="sp_p.png" width="36" height="36"/>
+        <image name="top.png" width="320" height="44"/>
+        <image name="wx.png" width="36" height="36"/>
+        <image name="wx_p.png" width="36" height="36"/>
+        <image name="xs.png" width="36" height="36"/>
+        <image name="xs_p.png" width="36" height="36"/>
+        <image name="zl.png" width="36" height="36"/>
+        <image name="zl_p.png" width="36" height="36"/>
+        <image name="zp.png" width="36" height="36"/>
+        <image name="zp_p.png" width="36" height="36"/>
+    </resources>
+</document>

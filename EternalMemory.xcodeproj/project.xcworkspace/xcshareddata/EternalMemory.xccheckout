@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>38F1E1F0-A093-48A3-A669-7FA16DF93F47</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>60d2e861-4609-b545-8a84-6ded49f4a3ac++4141</key>
+		<string>http://192.168.7.7/svn/eternal/trunk/iOS/EternalMemory-11.11</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EternalMemory.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>60d2e861-4609-b545-8a84-6ded49f4a3ac++4141</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>60d2e861-4609-b545-8a84-6ded49f4a3ac++4141</key>
+		<string>http://192.168.7.7/svn/eternal</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://192.168.7.7/svn/eternal/trunk/iOS/EternalMemory-11.11/EternalMemory.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>60d2e861-4609-b545-8a84-6ded49f4a3ac++4141</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>60d2e861-4609-b545-8a84-6ded49f4a3ac++4141</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Memory</string>
+		</dict>
+	</array>
+</dict>
+</plist>

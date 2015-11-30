@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "60d2e861-4609-b545-8a84-6ded49f4a3ac++4141",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "60d2e861-4609-b545-8a84-6ded49f4a3ac++4141" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "60d2e861-4609-b545-8a84-6ded49f4a3ac++4141" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "38F1E1F0-A093-48A3-A669-7FA16DF93F47",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "60d2e861-4609-b545-8a84-6ded49f4a3ac++4141" : "Memory\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EternalMemory",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EternalMemory.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.7.7\/svn\/eternal",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "60d2e861-4609-b545-8a84-6ded49f4a3ac++4141"
+    }
+  ]
+}

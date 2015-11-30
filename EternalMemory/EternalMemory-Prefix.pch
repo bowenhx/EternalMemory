@@ -1,0 +1,110 @@
+//
+// Prefix header for all source files of the 'EternalMemory' target in the 'EternalMemory' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 6.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+
+//添加的预编译
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+#import "JSONKit.h"
+#import "MBProgressHUD.h"
+
+//输出信息
+#ifndef Debug
+# define DLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define DLog(...);
+#endif
+
+//服务器配置
+
+#define PUBLIC_INLAND       @"http://m.iyhjy.com/"
+#define PUBLIC_SERVER_URL   @"http://m.iyhjy.com/api/"
+#define INLAND_SERVER_HOME  @"http://m.iyhjy.com/"
+
+#define VISIT_HOME_URL      [NSString stringWithFormat:@"%@home/accesshome?",INLAND_SERVER_HOME]//访问家园头
+#define MEMORY_SUCCESS_URL  [NSString stringWithFormat:@"%@home/success",INLAND_SERVER_HOME]//访问家园成功界面
+#define MEMORY_FAILURE_URL  [NSString stringWithFormat:@"%@home/failure",INLAND_SERVER_HOME]//访问家园失败界面
+
+#define SET_PRIVACY_URL     PUBLIC_INLAND//密保问题的url
+#define PSW_SUCCESS_URL     [NSString stringWithFormat:@"%@clientweb/operatesuccess",PUBLIC_INLAND]//密保页面成功
+#define PSW_FAILURE_URL     [NSString stringWithFormat:@"%@clientweb/operatefailure",PUBLIC_INLAND]//密保页面失败
+
+
+#define SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
+#define isRetina            ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone5             ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iOS7                ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0)
+#define RGBCOLOR(r,g,b)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define PHOTOSAVENUMBER     int i = 0;
+
+#define APPLE_ID            @"714751061"
+#define SER_SELECT          @"SERVER_SELECT"
+#define BUTTON_SELECT       @"button_select"
+
+#define USER_NAME_SAVE      @"OWNUSERName"
+#define USER_ID_SAVA        @"OWNUSEID"
+#define USER_ID_ORIGINAL    @"userIdOriginal"
+#define TOKEN @"IPHONE_TOKEN"
+#define USER_AUTH_SAVA      @"USER_SECRET_CODE"
+#define TOKEN_PARAM         @"clienttoken"
+#define AUTH_CODE           @"serverauth"
+#define PUBLICUID           @"000000"//风格模板公共用户ID
+#define OLDERVERSION        @"1.1"//上一个版本号
+#define CHANGEDSTYLES       [NSArray arrayWithObjects:@"style1",@"style3",@"style4",@"style5",@"style6", nil]//有改变的模板
+#define OTHER_HOME_STYLE    @"otherFavoriteStyle"//别人家园模板
+
+#define ISLOGIN             @"islogin"
+#define ISHANDLOGIN         @"isHandLogin"
+#define AUTO_RELOGIN        @"您的账号在其他设备登录，请尽快重新登录修改密码"
+#define ALERT_NETWORK       @"无网络或者网络状况差，请检查网络"
+#define ALERT_TITLE         @"温馨提示"
+#define ALERT_OK            @"确定"
+#define ALERT_NO            @"取消"
+#define POINT_OUTMES        @"您的账号已封存"
+#define NO_NOTICE           @"notNotice"//不再提示
+#define HOME_STATUS         @"homeStatus"
+#define WHOFAMILY           @"whoFamilyMemberId"
+#define REORDER_PHOTO_FIRST @"comeReorderFirst"
+#define Refresh_Sort_Photo  @"refreshSortPhoto"
+#define Refresh_Life_Audio  @"resfeshLifePhotoAudio"
+#define Delete_Life_Audio   @"deleteLifeAudio"
+#define First_Regist        @"firstRegister"
+
+#define kPhotoGroupChangedNotification     @"kPhotoGroupChangedNotification"
+
+//判断界面进入的方式
+#define COME_FIRST          1
+#define COME_SECOND         2
+#define COME_THIRD          3
+#define COME_FORTH          4
+#define SortRequest         400
+#define UploadAudioRequest  500
+
+
+// Release methods
+#define RELEASE_SAFELY(__POINTER)     { [__POINTER release]; __POINTER = nil; }
+#define CLEAR_REQUEST(__REQUEST)      { [__REQUEST clearDelegatesAndCancel]; __REQUEST = nil;}
+#define AUTORELEASE_SAFELY(__POINTER) { [__POINTER autorelease]; __POINTER = nil; }
+
+#ifdef  DEBUG
+#define debugLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define debugLog(...)
+#define debugMethod()
+#endif
+
+#endif
